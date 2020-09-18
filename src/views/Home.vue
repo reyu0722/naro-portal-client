@@ -1,14 +1,19 @@
 <template>
-  <hello-world />
+  <v-container>
+    <message-send />
+    <time-line />
+  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '../components/HelloWorld'
+import TimeLine from '../components/TimeLine'
+import MessageSend from '../components/MessageSend'
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    TimeLine,
+    MessageSend,
   },
 }
 </script>
